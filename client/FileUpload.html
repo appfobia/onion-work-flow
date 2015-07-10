@@ -1,0 +1,29 @@
+<template name="FileUpload">
+  <div class="column-md-4">
+    <p> Add File
+      <span class="btn btn-default btn-file">
+        <input multiple class="file fileInput" type="file" />
+      </span>
+    </p>
+    </div>
+<div class="column-md-4">
+  <table class="table table-hover table-stripped table-bordered">
+    <thead>
+      <th>Name</th>
+        <th>Download</th>
+    </thead>
+    <tbody>
+    {{#each uploads}}
+    <tr>
+      <td>
+        {{name}}
+      </td>
+      <td>
+        <a class="btn btn-primary" href="{{url download=true}}">Download</a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+  </table>
+</div>
+</template>

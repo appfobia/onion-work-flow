@@ -1,0 +1,23 @@
+<template name="drawingList">
+  <table class="drawingList" >
+    <tr>
+    <td></td>
+    <td class="tableH" style="font-weight:bold">Drawing name</td>
+    <td class="tableH" style="font-weight:bold">Drawing no.</td>
+    <td class="tableH" style="font-weight:bold">Revision</td>
+    </tr>
+    {{#each players}}
+      {{> player}}
+    {{/each}}
+  </table>
+
+  {{#if selectedName}}
+    <div class="details">
+      <!-- <div class="name">{{selectedName}}</div> -->
+      <input class="name" id='drawing_name' type="text" style="size:80" value={{selectedName}}>
+      <button class="inc">Edit</button>
+    </div>
+  {{else}}
+    <div class="message">Click a drawing to select</div>
+  {{/if}}
+</template>
