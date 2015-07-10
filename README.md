@@ -6,7 +6,8 @@ Upload and share files &amp; documents among your project team members.
 <h4>Install packages</h4>
 
 <pre> $ meteor add cfs:standard-packages
- $ meteor add cfs:filesystem</pre>
+ $ meteor add cfs:filesystem
+ $ meteor add mrt:bootstrap-3</pre>
 
 <h4>Run</h4>
 
