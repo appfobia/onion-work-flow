@@ -43,13 +43,13 @@ body {
   text-align: center;
 }
 
-.drawingList {
+.docList {
   border-top: 1px solid #f1f1f1;
   counter-reset: ol-counter;
   list-style-type: none;
   margin-left:-200px;
   padding: 0;
-  width:800px; 
+  width:800px;
   border-collapse: separate;
   border-spacing: 10px 50px;
 }
@@ -185,7 +185,7 @@ body {
   .player.selected:hover {
     background-color: #fefff4;
   }
-  
+
   .tableH {
   font-weight:bold;
 }

@@ -1,10 +1,9 @@
-<template name="drawingList">
-  <table class="drawingList" >
-    <tr>
-    <td></td>
-    <td class="tableH" style="font-weight:bold">Drawing name</td>
-    <td class="tableH" style="font-weight:bold">Drawing no.</td>
-    <td class="tableH" style="font-weight:bold">Revision</td>
+<template name="docList">
+  <table class="docList" >
+    <tr class="player">
+    <th class="tableH" style="font-weight:bold">Drawing name</th>
+    <th class="tableH" style="font-weight:bold">Drawing no.</th>
+    <th class="tableH" style="font-weight:bold">Revision</th>
     </tr>
     {{#each players}}
       {{> player}}
